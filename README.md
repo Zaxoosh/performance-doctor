@@ -5,8 +5,8 @@ Performance Doctor is a server-side Minecraft mod that explains server performan
 ## Current Target
 
 - Loader: Fabric
-- Minecraft: 1.21.1
-- Java: 21
+- Minecraft: 1.20.1
+- Java: 17
 - Environment: server only
 
 The mod is intentionally server-side first. It does not require clients to install anything.
@@ -44,6 +44,8 @@ $env:JAVA_HOME = 'C:\Program Files\Java\jdk-21.0.10'
 $env:Path = "$env:JAVA_HOME\bin;$env:Path"
 gradle build
 ```
+
+This backport branch compiles with Java 17 bytecode while still allowing a newer installed JDK to run Gradle.
 
 The jar will be produced under `build/libs/`.
 
