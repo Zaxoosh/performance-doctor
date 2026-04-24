@@ -71,9 +71,6 @@ Jars are produced under:
 - `platforms/neoforge-1.21.1/build/libs/`
 - `platforms/forge-1.21.1/build/libs/`
 
-## Revenue Strategy
-
-Performance Doctor is designed for broad utility: server owners, modpack players, pack maintainers, and Discord support helpers all need readable performance reports. That makes it a strong fit for Modrinth discoverability and GitHub stars because it solves a repeated support problem rather than a one-time novelty.
 
 ## Roadmap
 
