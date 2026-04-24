@@ -5,7 +5,7 @@ Performance Doctor is a server-side Minecraft mod that explains server performan
 ## Current Target
 
 - Loader: Fabric
-- Minecraft: 1.21.1
+- Minecraft: 1.21.4
 - Java: 21
 - Environment: server only
 
