@@ -4,7 +4,8 @@ Performance Doctor is a server-side Minecraft mod that explains server performan
 
 ## Current Target
 
-- Loader: Fabric
+- Primary loader: Fabric
+- Additional loaders: NeoForge, Forge
 - Minecraft: 1.21.1
 - Java: 21
 - Environment: server only
@@ -39,13 +40,36 @@ Server-side only is good for TPS/MSPT, memory, worlds, chunks, entities, dimensi
 
 ## Build
 
+Fabric:
+
 ```powershell
 $env:JAVA_HOME = 'C:\Program Files\Java\jdk-21.0.10'
 $env:Path = "$env:JAVA_HOME\bin;$env:Path"
-gradle build
+.\gradlew.bat clean build
 ```
 
-The jar will be produced under `build/libs/`.
+NeoForge:
+
+```powershell
+$env:JAVA_HOME = 'C:\Program Files\Java\jdk-21.0.10'
+$env:Path = "$env:JAVA_HOME\bin;$env:Path"
+.\gradlew.bat -p platforms\neoforge-1.21.1 clean build
+```
+
+Forge:
+
+```powershell
+$env:JAVA_HOME = 'C:\Program Files\Java\jdk-21.0.10'
+$env:Path = "$env:JAVA_HOME\bin;$env:Path"
+cd platforms\forge-1.21.1
+.\gradlew.bat clean build
+```
+
+Jars are produced under:
+
+- `build/libs/`
+- `platforms/neoforge-1.21.1/build/libs/`
+- `platforms/forge-1.21.1/build/libs/`
 
 ## Revenue Strategy
 
@@ -58,4 +82,5 @@ Performance Doctor is designed for broad utility: server owners, modpack players
 - Spark/Lithium/Chunky/C2ME-aware hints where installed
 - Scheduled report snapshots
 - Modrinth/Discord-friendly report summary copy
+- Shared common module to reduce duplicated loader code
 - Optional client companion for FPS/render diagnostics

@@ -26,9 +26,11 @@ Start with Fabric `1.21.1`, then backport to Fabric `1.20.1` after the MVP is st
 ## Loader Plan
 
 1. Fabric 1.21.1: current baseline in this repository.
-2. Fabric 1.20.1: first backport because it has the largest ecosystem.
-3. NeoForge 1.21.1 or 1.20.1: consider after the Fabric command/reporting experience is polished.
-4. Older versions: only add if analytics prove demand.
+2. NeoForge 1.21.1: added for modern modded servers.
+3. Forge 1.21.1: added for server owners still using MinecraftForge on current releases.
+4. Fabric 1.20.1: first older-version branch because it has the largest ecosystem.
+5. Forge 1.20.1: high-value next port because many 1.20.1 packs are Forge-based.
+6. Older versions: only add if analytics prove demand.
 
 ## Server-Side Compatibility Notes
 

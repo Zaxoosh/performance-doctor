@@ -11,6 +11,7 @@ Performance Doctor helps server owners understand lag without digging through pr
 ## Features
 
 - Server-side only: clients do not need the mod.
+- Fabric, NeoForge, and Forge builds for Minecraft 1.21.1.
 - `/perfdoctor status` for a quick health check.
 - `/perfdoctor spikes` for recent slow ticks.
 - `/perfdoctor report` for a shareable JSON report.
