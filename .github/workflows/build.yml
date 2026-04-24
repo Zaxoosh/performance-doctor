@@ -22,5 +22,12 @@ jobs:
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
 
-      - name: Build
+      - name: Build Fabric 1.21.1
+        run: ./gradlew build
+
+      - name: Build NeoForge 1.21.1
+        run: ./gradlew -p platforms/neoforge-1.21.1 build
+
+      - name: Build Forge 1.21.1
+        working-directory: platforms/forge-1.21.1
         run: ./gradlew build

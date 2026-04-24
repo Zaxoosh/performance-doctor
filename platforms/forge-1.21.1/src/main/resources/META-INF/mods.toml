@@ -1,0 +1,28 @@
+modLoader = "javafml"
+loaderVersion = "[52,)"
+license = "MIT"
+issueTrackerURL = "https://github.com/Zaxoosh/performance-doctor/issues"
+
+[[mods]]
+modId = "performance_doctor"
+version = "${version}"
+displayName = "Performance Doctor"
+displayURL = "https://github.com/Zaxoosh/performance-doctor"
+authors = "Zaxoosh"
+description = '''
+Server-side Minecraft performance diagnostics with readable reports for TPS, MSPT, memory, chunks, entities, and lag spikes.
+'''
+
+[[dependencies.performance_doctor]]
+modId = "forge"
+mandatory = true
+versionRange = "[52,)"
+ordering = "NONE"
+side = "SERVER"
+
+[[dependencies.performance_doctor]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.21.1,1.21.2)"
+ordering = "NONE"
+side = "SERVER"
