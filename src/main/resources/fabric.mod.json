@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "performance-doctor",
+  "version": "${version}",
+  "name": "Performance Doctor",
+  "description": "Server-side Minecraft performance diagnostics with readable reports for TPS, MSPT, memory, chunks, entities, and lag spikes.",
+  "authors": [
+    "Zaxoosh"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/performance-doctor",
+    "sources": "https://github.com/Zaxoosh/performance-doctor",
+    "issues": "https://github.com/Zaxoosh/performance-doctor/issues"
+  },
+  "license": "MIT",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "dev.zaxoosh.performancedoctor.PerformanceDoctorMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
